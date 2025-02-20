@@ -3,173 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trainning and Learn Community</title>
+    <title>Fitness & Language Learning</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
             font-family: Helvetica, sans-serif;
-            color: #111;
-            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            color: #333;
         }
-        h1, h2 {
+        h1 {
             font-family: 'Lora', serif;
+            font-weight: 700;
+            font-size: 52px;
+            margin-bottom: -15px;
         }
-        h1 { font-weight: 700; }
-        h2 { font-weight: 400; }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
+        h2 {
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
-        
-        .header {
-            position: relative;
-            width: 100%;
+       h3 {
+            font-family: Helvetica, sans-serif;
+            font-weight: 200;
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+      .section h2 {
+    font-size: 32px; 
+    font-weight: 400; 
+    color: #000; 
+    margin-bottom: -5px; 
+}
+        .cta {
+            background-color: #FC3DA5;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 55px;
+            margin-top: 25px;
+        }
+      .hero-cta {
+    background-color: #FC3DA5;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 55px;
+    margin-top: 15px;
+}
+        .hero {
+            background: url('https://images.pexels.com/photos/4720531/pexels-photo-4720531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
             height: 100vh;
-            background: url('https://images.pexels.com/photos/4720531/pexels-photo-4720531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
             display: flex;
             align-items: flex-end;
-            padding: 40px;
+            padding: 50px;
+            color: white;
         }
-        .header-content {
-            color: #fff;
-            max-width: 650px;
-        }
-        .cta {
-            background: #FC3DA5;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 24px;
-            display: inline-block;
-            margin-top: 20px;
-            font-weight: bold;
-            border-radius: 5px;
-        }
+        .hero-content {
+          position: absolute;
         
+          left: 50px;
+            max-width: 700px;
+        }
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            color: white;
+        }
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: white;
+        }
         .section {
+            padding: 80px 50px;
+            max-width: 1200px;
+            margin: auto;
             display: flex;
             align-items: center;
-            padding: 80px 0;
+            gap: 40px;
+  
         }
-        .text {
+        .section img {
             width: 50%;
-            padding: 30px;
         }
-        .image {
+        .text-content {
             width: 50%;
-            background: url('https://images.pexels.com/photos/10039525/pexels-photo-10039525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
-            height: 450px;
         }
+      .testimonials-header {
+    padding: 0 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; 
+    font-family: 'Lora', serif;
+    font-size: 32px; 
+    font-weight: 400; 
+    color: #000; 
+    margin-top: 100px;
+    margin-bottom: 50px; 
         
+}
+
         .testimonials {
             display: flex;
-            gap: 20px;
+            gap: 40px;
+          padding: 50px 50px;
         }
-        .testimonial {
-            flex: 1;
-            height: 300px;
-            background: url('https://images.pexels.com/photos/209983/pexels-photo-209983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover no-repeat;
-            position: relative;
-            color: #fff;
-            display: flex;
-            align-items: flex-end;
-            padding: 20px;
-        }
-        .testimonial::before {
+       .testimonial {
+    flex: 1; /* Ensures equal width for all testimonials */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 50px;
+         
+    min-height: 400px;
+    border-radius: 15px; /* Adds rounded corners */
+    color: white;
+    position: relative;
+    width: 100%; /* Ensures consistent width */
+}
+      .testimonial-1 {
+    background: url('https://images.pexels.com/photos/1334945/pexels-photo-1334945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
+}
+
+.testimonial-2 {
+    background: url('https://images.pexels.com/photos/8172779/pexels-photo-8172779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
+}
+
+.testimonial-3 {
+    background: url('https://images.pexels.com/photos/6760985/pexels-photo-6760985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
+}
+        .testimonial:before {
             content: "";
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 70%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.3);
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+          border-radius: 15px;
+          pointer-events: none;
         }
         .testimonial p {
             position: relative;
             z-index: 1;
-        }
+          font-family: 'Lora', serif;
+    font-size: 16px; 
+    font-weight: 400; 
         
+          margin: -25px;
+          padding: -25px;
+        }
         .faq {
-            padding: 60px 0;
+            padding: 50px;
+          margin-top: -50px;
+          margin-bottom: 50px;
         }
         .faq-item {
             margin-bottom: 20px;
         }
-        .faq-item h3 {
-            margin-bottom: 5px;
-        }
-        
-        .footer {
-            background: #000;
-            color: #fff;
+        footer {
+            background: black;
+            color: white;
             text-align: center;
             padding: 20px;
         }
-        .footer a {
-            color: #FC3DA5;
+        footer a {
+            color: white;
             margin: 0 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .section {
-                flex-direction: column;
-                text-align: center;
-            }
-            .text, .image {
-                width: 100%;
-            }
-            .testimonials {
-                flex-direction: column;
-            }
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <nav class="container" style="text-align: right; padding: 20px 0;">
-        <a href="#" style="color: #111; text-decoration: none; font-size: 14px;">Contact</a>
-    </nav>
-    <header class="header">
-        <div class="header-content">
-            <h1>Train Your Body. Learn a Language.</h1>
-            <h2>Fitness and Spanish combined for an immersive experience.</h2>
-            <a href="#" class="cta">Get Started</a>
-        </div>
-    </header>
-    <section class="section container">
-        <div class="text">
-            <h2>About</h2>
-            <p>We merge fitness with language learning to make training an immersive experience.</p>
+    <div class="nav">
+        <a href="#Events">Events</a>
+        <a href="#Retreats">Retreats</a>
+        <a href="#Blog">Blog</a>
+        <a href="#Contact Us">Contact</a>
+    </div>
+    
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Cognitive Body Fitness</h1>
+        <h3>Stimulate your learning skills through collective body movement</h3>
+        
+        <a href="#" class="hero-cta">Join our Community</a>
+    </div>
+</section>
+  
+<section class="testimonials-section">
+    <div class="testimonials-header">
+        <p>Beyond fitness and language, this community is built on support, motivation, and shared experiences. Every session brings coffee and people together—learning, sweating, and pushing each other forward, no matter where they are on their journey.</p> 
+    </div>
+  </section>
+    
+    <section class="section" id="about">
+        <div class="text-content">
+            <h2>What's this about</h2>
+            <p>We believe fitness is more than just movement—it’s an opportunity to challenge yourself, build confidence, and learn something new. Our unique approach blends physical training with immersive language learning, keeping both your body and mind engaged. </p>
             <a href="#" class="cta">Book a Free Session</a>
         </div>
-        <div class="image"></div>
+        <img src="https://images.pexels.com/photos/10039525/pexels-photo-10039525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fitness Training">
     </section>
-    <section class="section container">
-        <div class="image"></div>
-        <div class="text">
+    
+    <section class="section" id="how-it-works">
+        <img src="https://images.pexels.com/photos/8172779/pexels-photo-8172779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Training Session">
+        <div class="text-content">
             <h2>How It Works</h2>
-            <p>Our structured approach integrates movement with Spanish lessons for a fun and effective workout.</p>
+            <p>We combine movement with real-time language practice to create an immersive learning experience. Each session is designed to keep you active while naturally absorbing new words and phrases. Whether it’s through guided workouts, conversational drills, or fun challenges, you’ll be learning without even realizing it. No textbooks, no memorization—just movement, connection, and progress.</p>
             <a href="#" class="cta">Explore the Method</a>
         </div>
     </section>
-    <section class="container testimonials">
-        <div class="testimonial"><p>"This program changed my life!"</p></div>
-        <div class="testimonial"><p>"A fun way to stay fit and learn Spanish."</p></div>
-        <div class="testimonial"><p>"I never imagined training like this!"</p></div>
+<section class="testimonials-section">
+    <div class="testimonials-header">
+        <h2>What Our Members Say</h2>
+        <p>"This isn’t just about training or learning a language—it’s about showing up for each other. Whether it’s pushing through that last set, sharing a new phrase over breakfast, or unwinding after a long hike, the best part of this journey is the people who make it feel like home."</p>
+    </div>
+
+  
+   <section class="testimonials" id="testimonials">
+    <div class="testimonial testimonial-1">
+        <p>"A ver sweatty way to learn how to ask for directions for my trip in South America!"</p>
+    </div>
+    <div class="testimonial testimonial-2">
+        <p>"Not just a workout, but a cute way to find out that burpees are hard in any langugage."</p>
+    </div>
+    <div class="testimonial testimonial-3">
+        <p>"What started as a joke ended up getting me getting in the best shape of my life. Vamos!"</p>
+    </div>
+</section>
+    
+    <section class="faq" id="faq">
+        <h1>FAQs</h1>
+        <div class="faq-item"><h2><strong>How does it work?</strong><br>We combine movement with active language immersion.</h2></div>
+        <div class="faq-item"><h2><strong>Who is this for?</strong><br>Anyone who wants to learn a language while staying active.</h2></div>
+        <div class="faq-item"><h2><strong>What languages are available?</strong><br>Currently, we offer Spanish.</h2></div>
+        <div class="faq-item"><h2><strong>How does it work?</strong><br>We combine movement with active language immersion.</h2></div>
+        
     </section>
-    <section class="faq container">
-        <h2>FAQ</h2>
-        <div class="faq-item"><h3>What makes this unique?</h3><p>Our approach integrates fitness with real-life language learning.</p></div>
-        <div class="faq-item"><h3>Who is this for?</h3><p>Anyone who wants to stay fit and learn Spanish.</p></div>
-    </section>
-    <footer class="footer">
-        <p>Follow us: <a href="#">Instagram</a> | <a href="#">Strava</a> | <a href="#">TikTok</a></p>
+    
+    <footer>
+        <a href="#">Instagram</a>
+        <a href="#">Strava</a>
+        <a href="#">TikTok</a>
     </footer>
 </body>
 </html>
