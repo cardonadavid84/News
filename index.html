@@ -15,7 +15,7 @@
         nav {
             position: absolute;
             top: 20px;
-            right: 10%;
+            left: 10%;
             display: flex;
             gap: 20px;
         }
@@ -37,16 +37,11 @@
         .header-content {
             text-align: left;
         }
-        h1 {
+        h1, h2, h3 {
             font-family: 'Lora', serif;
             font-weight: bold;
             font-size: 64px;
             margin-bottom: 0px;
-        }
-        h2, h3 {
-            font-family: 'Lora', serif;
-            font-weight: bold;
-            margin-bottom: 5px;
         }
         p {
             font-size: 18px;
@@ -61,10 +56,10 @@
             text-transform: uppercase;
             text-decoration: none;
             border-radius: 5px;
-            margin-top: 20px;
+            margin-top: 10px;
         }
         .section {
-            padding: 60px 10%;
+            padding: 100px 10%;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -74,8 +69,8 @@
             color: #000;
         }
         .section-dark {
-            background: #000;
-            color: #fff;
+            background: #fff;
+            color: #000;
         }
         .section img {
             width: 50%;
@@ -86,35 +81,30 @@
         }
         .testimonials {
             text-align: center;
-            padding: 60px 10%;
+            padding: 100px 10%;
             background: #fff;
             color: #000;
-        }
-        .testimonials-container {
             display: flex;
             justify-content: space-between;
         }
         .testimonial {
             width: 30%;
-            text-align: left;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .testimonial img {
             width: 100%;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
-            display: block;
         }
         .testimonial-content {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-            color: #fff;
-            font-family: 'Lora', serif;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
             font-size: 16px;
-            font-style: italic;
+            margin-top: 10px;
         }
         .faq {
             text-align: left;
@@ -130,14 +120,14 @@
         footer {
             text-align: center;
             padding: 20px;
-            background: #FF1493;
-            color: #000;
+            background: #000;
+            color: #fff;
         }
         .social-links a {
-            color: #000;
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 24px;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -162,6 +152,7 @@
         <div class="text">
             <h2>About Train & Learn</h2>
             <p>Train & Learn is designed for those who want to challenge their body and mind. Our approach blends fitness and Spanish learning in a natural, immersive way.</p>
+            <a href="#join" class="cta-button">Book a Free Session</a>
         </div>
     </section>
 
@@ -169,21 +160,23 @@
         <div class="text">
             <h2>How It Works</h2>
             <p>We integrate movement and language in a unique, engaging way. Each session combines fitness training with Spanish immersion, making learning dynamic and fun.</p>
+            <a href="#join" class="cta-button">Explore the Method</a>
         </div>
         <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="How It Works">
     </section>
 
     <section id="testimonials" class="testimonials">
-        <h2>What Our Members Say</h2>
-        <div class="testimonials-container">
-            <div class="testimonial">
-                <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="User 1">
-                <div class="testimonial-content">“This program changed the way I learn languages and stay fit!”</div>
-            </div>
-            <div class="testimonial">
-                <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="User 2">
-                <div class="testimonial-content">“I’ve never felt more motivated to train and learn something new!”</div>
-            </div>
+        <div class="testimonial">
+            <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="User 1">
+            <div class="testimonial-content">“This program changed the way I learn languages and stay fit!”</div>
+        </div>
+        <div class="testimonial">
+            <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="User 2">
+            <div class="testimonial-content">“I’ve never felt more motivated to train and learn something new!”</div>
+        </div>
+        <div class="testimonial">
+            <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="User 3">
+            <div class="testimonial-content">“El mejor método para aprender y mantenerse en forma.”</div>
         </div>
     </section>
 
@@ -191,6 +184,8 @@
         <h2>Frequently Asked Questions</h2>
         <div class="faq-item"><h3>Who is this for?</h3><p>Anyone looking to stay fit while learning Spanish, regardless of experience.</p></div>
         <div class="faq-item"><h3>Do I need to be fluent in Spanish?</h3><p>No, we adapt to all levels!</p></div>
+        <div class="faq-item"><h3>Where do sessions take place?</h3><p>We offer both in-person and online options.</p></div>
+        <div class="faq-item"><h3>Can I try a session before committing?</h3><p>Yes! We offer a free introductory session.</p></div>
     </section>
 
     <footer>
@@ -198,7 +193,7 @@
         <div class="social-links">
             <a href="#">Instagram</a>
             <a href="#">Strava</a>
-            <a href="#">Tik Tok</a>
+            <a href="#">TikTok</a>
         </div>
     </footer>
 </body>
