@@ -13,52 +13,40 @@
             color: #fff;
         }
         nav {
+            position: absolute;
+            top: 20px;
+            right: 10%;
             display: flex;
-            justify-content: center;
-            padding: 20px;
-            background: #000;
+            gap: 20px;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
             font-size: 18px;
         }
         header {
             position: relative;
-            text-align: center;
-            background: url('https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center;
+            background: url('https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg') no-repeat center;
             background-size: cover;
             height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 60px 10%;
         }
         .header-content {
-            padding: 20px;
-            text-align: center;
+            text-align: left;
         }
-        .explore-more {
-            position: absolute;
-            bottom: 20px;
-            font-size: 16px;
-            animation: float 2s infinite ease-in-out;
+        h1 {
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            font-size: 64px;
+            margin-bottom: 0px;
         }
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-5px); }
-            100% { transform: translateY(0px); }
-        }
-        h1, h2 {
+        h2, h3 {
             font-family: 'Lora', serif;
             font-weight: bold;
             margin-bottom: 5px;
-        }
-        h3 {
-            font-family: 'Lora', serif;
-            font-weight: 500;
-            font-size: 24px;
         }
         p {
             font-size: 18px;
@@ -75,19 +63,25 @@
             border-radius: 5px;
             margin-top: 20px;
         }
-        .section-light {
-            background: #fff;
-            color: #000;
+        .section {
             padding: 60px 10%;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-        .section-light img {
+        .section-light {
+            background: #fff;
+            color: #000;
+        }
+        .section-dark {
+            background: #000;
+            color: #fff;
+        }
+        .section img {
             width: 50%;
             border-radius: 10px;
         }
-        .section-light .text {
+        .text {
             width: 45%;
         }
         .testimonials {
@@ -133,9 +127,6 @@
         .faq-item {
             margin-bottom: 20px;
         }
-        .faq-item p {
-            margin-top: 5px;
-        }
         footer {
             text-align: center;
             padding: 20px;
@@ -152,9 +143,10 @@
 </head>
 <body>
     <nav>
-        <a href="#guides">Guides</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
     </nav>
 
     <header>
@@ -163,15 +155,50 @@
             <p>Get stronger, pick up Spanish, and meet like-minded people who love to move and learn—together.</p>
             <a href="#join" class="cta-button">Join the Community</a>
         </div>
-        <p class="explore-more">Explore more ↓</p>
     </header>
+
+    <section id="about" class="section section-light">
+        <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="About">
+        <div class="text">
+            <h2>About Train & Learn</h2>
+            <p>Train & Learn is designed for those who want to challenge their body and mind. Our approach blends fitness and Spanish learning in a natural, immersive way.</p>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section section-dark">
+        <div class="text">
+            <h2>How It Works</h2>
+            <p>We integrate movement and language in a unique, engaging way. Each session combines fitness training with Spanish immersion, making learning dynamic and fun.</p>
+        </div>
+        <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="How It Works">
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Members Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="User 1">
+                <div class="testimonial-content">“This program changed the way I learn languages and stay fit!”</div>
+            </div>
+            <div class="testimonial">
+                <img src="https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg" alt="User 2">
+                <div class="testimonial-content">“I’ve never felt more motivated to train and learn something new!”</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item"><h3>Who is this for?</h3><p>Anyone looking to stay fit while learning Spanish, regardless of experience.</p></div>
+        <div class="faq-item"><h3>Do I need to be fluent in Spanish?</h3><p>No, we adapt to all levels!</p></div>
+    </section>
 
     <footer>
         <p>Follow us on:</p>
         <div class="social-links">
-            <a href="https://instagram.com">📸</a>
-            <a href="https://strava.com">🏃</a>
-            <a href="https://tiktok.com">🎵</a>
+            <a href="#">Instagram</a>
+            <a href="#">Strava</a>
+            <a href="#">Tik Tok</a>
         </div>
     </footer>
 </body>
