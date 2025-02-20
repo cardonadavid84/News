@@ -1,88 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Newsletter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train & Learn - Join the Community</title>
     <style>
         body {
             font-family: Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f8f8;
+            background-color: #000;
+            color: #fff;
         }
-        .container {
-            max-width: 600px;
-            margin: 20px auto;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .header img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        .content {
-            padding: 20px;
+        header {
+            position: relative;
             text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?fitness') no-repeat center;
+            background-size: cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .title {
+        .header-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
             font-family: 'Lora', serif;
-            font-size: 24px;
             font-weight: bold;
-            color: #333;
-            margin-bottom: 15px;
+            font-size: 48px;
         }
-        .text {
-            font-size: 16px;
-            color: #555;
+        h2 {
+            font-family: 'Lora', serif;
+            font-weight: 500;
+            font-size: 32px;
+        }
+        h3 {
+            font-family: 'Lora', serif;
+            font-weight: 500;
+            font-size: 24px;
+        }
+        p {
+            font-size: 18px;
             line-height: 1.6;
         }
-        .cta {
+        .cta-button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            font-size: 16px;
-            font-weight: bold;
-            font-family: 'helvetica', sans-serif;
-            text-decoration: none;
-            background-color: #ff6600;
+            padding: 15px 30px;
+            background: #FF1493;
             color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
             border-radius: 5px;
-        }
-        .cta:hover {
-            background-color: #e65c00;
-        }
-        .footer {
-            text-align: center;
-            font-size: 14px;
-            color: #777;
             margin-top: 20px;
+        }
+        .section-light {
+            background: #fff;
+            color: #000;
+            padding: 60px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-light img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .section-light .text {
+            width: 45%;
+        }
+        .section-dark {
+            background: #000;
+            color: #fff;
+            padding: 60px 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section-dark img {
+            width: 50%;
+            border-radius: 10px;
+        }
+        .section-dark .text {
+            width: 45%;
+        }
+        .testimonials {
+            text-align: center;
+            padding: 60px 10%;
+            background: #fff;
+            color: #000;
+        }
+        .testimonials-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .testimonial {
+            width: 30%;
+            text-align: center;
+        }
+        .testimonial img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        blockquote {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .faq {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+            padding: 60px 10%;
+            background: #000;
+            color: #fff;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #FF1493;
+            color: #000;
+        }
+        .social-links a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="header">
-        <img src="https://images.unsplash.com/flagged/photo-1556746834-cbb4a38ee593?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Newsletter Image">
-    </div>
-    
-    <div class="content">
-        <div class="title">Train Smart, Speak Spanish, Have Fun! 💪🇪🇸</div>
-        <div class="text">
-            Tired of boring workouts? Want to make learning Spanish actually stick?  
-            Join our fun and interactive **Spanish Fitness Sessions** and experience a whole new way to train!  
+    <header>
+        <div class="header-content">
+            <h1>Train & Learn</h1>
+            <p>Get Stronger. Learn Spanish. Join the Movement.</p>
+            <a href="#join" class="cta-button">Join the Community</a>
         </div>
-        
-        <a href="https://david-cardona.com/" class="cta">Book Your Free Class</a>
-    </div>
-    
-    <div class="footer">
-        © 2024 Your Business Name | <a href="https://yourwebsite.com" style="color: #ff6600; text-decoration: none;">Visit Website</a>
-    </div>
-</div>
+    </header>
 
+    <section class="section-light">
+        <img src="https://source.unsplash.com/1600x900/?workout" alt="About Train & Learn">
+        <div class="text">
+            <h2>About Train & Learn</h2>
+            <p>Train & Learn is designed for those who want to challenge their body and mind. Our innovative approach blends fitness and Spanish learning into one engaging experience.</p>
+            <a href="#join" class="cta-button">Book a Free Session</a>
+        </div>
+    </section>
+
+    <section class="section-dark">
+        <div class="text">
+            <h2>How It Works</h2>
+            <p>Every session combines dynamic workouts with Spanish learning techniques to help you move and grow at the same time.</p>
+            <a href="#join" class="cta-button">Explore the Method</a>
+        </div>
+        <img src="https://source.unsplash.com/1600x900/?gym" alt="How It Works">
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Members Say</h2>
+        <p>Real stories from people who train and learn with us.</p>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="https://source.unsplash.com/400x400/?person" alt="Testimonial 1">
+                <blockquote>"I never imagined I could improve my Spanish while getting stronger. It's fun and effective!"</blockquote>
+            </div>
+            <div class="testimonial">
+                <img src="https://source.unsplash.com/400x400/?athlete" alt="Testimonial 2">
+                <blockquote>"A great way to stay fit and learn a new language naturally. Totally worth it!"</blockquote>
+            </div>
+            <div class="testimonial">
+                <img src="https://source.unsplash.com/400x400/?woman" alt="Testimonial 3">
+                <blockquote>"Entrenar y aprender español al mismo tiempo? Genial!"</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <h3>Who is this for?</h3>
+            <p>Anyone looking to stay fit while learning Spanish, regardless of fitness level.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do I need to know Spanish?</h3>
+            <p>No, you can start at any level. We adapt to beginners and advanced learners alike.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Follow us on:</p>
+        <div class="social-links">
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://strava.com">Strava</a>
+            <a href="https://tiktok.com">TikTok</a>
+        </div>
+    </footer>
 </body>
 </html>
