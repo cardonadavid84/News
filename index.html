@@ -17,7 +17,7 @@
             text-align: center;
             background: url('https://images.pexels.com/photos/7671477/pexels-photo-7671477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center;
             background-size: cover;
-            height: 80vh;
+            height: 90vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -42,8 +42,8 @@
             font-size: 24px;
         }
         h1, h2, h3 {
-    margin-bottom: 3px;
-}
+    margin-bottom: 0px;
+        }
         p {
             font-size: 18px;
             line-height: 1.6;
@@ -89,27 +89,35 @@
         .section-dark .text {
             width: 45%;
         }
-        .testimonials {
-            text-align: left;
-            padding: 60px 10%;
-            background: #fff;
-            color: #000;
-        }
-        .testimonials-container {
-            display: flex;
-            justify-content: space-between;
-        }
         .testimonial {
-            width: 30%;
-            text-align: left;
-        }
-        .testimonial img {
-            width: 100%;
-            border-radius: 5px;
-        }
+    position: relative;
+    width: 30%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.testimonial img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.testimonial-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    color: #fff;
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-style: regular;
+    border-radius: 0 0 10px 10px;
+}
         blockquote {
             font-family: 'Lora', serif;
-            font-style: italic;
+            font-style: regular;
             font-size: 16px;
             margin-top: 10px;
         }
@@ -118,11 +126,11 @@
     max-width: 800px;
     margin: auto;
     padding: 60px 10%;
-    background: #000;
-    color: #fff;
+    background: #fff;
+    color: #000;
 }
         .faq-item {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         footer {
             text-align: center;
@@ -167,21 +175,26 @@
 
     <section class="testimonials">
         <h2>What Our Members Say</h2>
-        <p>Real stories from people who train and learn with us.</p>
+        <p>Real stories from people who train and learn with us.</p>        
         <div class="testimonials-container">
             <div class="testimonial">
-                <img src="https://images.pexels.com/photos/30783683/pexels-photo-30783683/free-photo-of-artistic-portrait-of-man-sitting-by-window.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 1">
-                <blockquote>"I never imagined I could improve my Spanish while getting stronger. It's fun and effective!"</blockquote>
-            </div>
+    <img src="https://images.pexels.com/photos/30783683/pexels-photo-30783683/free-photo-of-artistic-portrait-of-man-sitting-by-window.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 1">
+    <div class="testimonial-content">
+        <blockquote>"I never imagined I could improve my Spanish while getting stronger. It's fun and effective!"</blockquote>
+    </div>
+</div>
             <div class="testimonial">
-                <img src="https://images.pexels.com/photos/1755385/pexels-photo-1755385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 2">
-                <blockquote>"A great way to stay fit and learn a new language naturally. Totally worth it!"</blockquote>
-            </div>
-            <div class="testimonial">
-                <img src="https://images.pexels.com/photos/3617171/pexels-photo-3617171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 3">
-                <blockquote>"Entrenar y aprender español al mismo tiempo? Genial!"</blockquote>
-            </div>
-        </div>
+    <img src="https://images.pexels.com/photos/1755385/pexels-photo-1755385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 1">
+    <div class="testimonial-content">
+        <blockquote>"A great way to stay fit and learn a new language naturally. Totally worth it!"</blockquote>
+    </div>
+</div>
+                        <div class="testimonial">
+    <img src="https://images.pexels.com/photos/3617171/pexels-photo-3617171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 1">
+    <div class="testimonial-content">
+        <blockquote>"Entrenar y aprender español al mismo tiempo? Genial!"</blockquote>
+    </div>
+</div>
     </section>
 
     <section class="faq">
