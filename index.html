@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Train & Learn - Movement • Skills • Community </title>
+    <title>Train & Learn - Join the Community</title>
     <style>
         body {
             font-family: Helvetica, sans-serif;
@@ -12,34 +12,54 @@
             background-color: #000;
             color: #fff;
         }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background: #000;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
         header {
             position: relative;
             text-align: center;
-            background: url('https://images.pexels.com/photos/7671477/pexels-photo-7671477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center;
+            background: url('https://images.pexels.com/photos/4804380/pexels-photo-4804380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center;
             background-size: cover;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
         }
         .header-content {
             padding: 20px;
-            border-radius: 10px;
+            text-align: center;
         }
-        h1 {
+        .explore-more {
+            position: absolute;
+            bottom: 20px;
+            font-size: 16px;
+            animation: float 2s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        h1, h2 {
             font-family: 'Lora', serif;
             font-weight: bold;
-            font-size: 60px;
-        }
-        h2 {
-            font-family: 'Lora', serif;
-            font-weight: 500;
-            font-size: 36px;
+            margin-bottom: 5px;
         }
         h3 {
             font-family: 'Lora', serif;
             font-weight: 500;
             font-size: 24px;
+        }
         p {
             font-size: 18px;
             line-height: 1.6;
@@ -65,62 +85,56 @@
         }
         .section-light img {
             width: 50%;
-            border-radius: 5px;
+            border-radius: 10px;
         }
         .section-light .text {
             width: 45%;
         }
-        .section-dark {
-            background: #000;
-            color: #fff;
+        .testimonials {
+            text-align: center;
             padding: 60px 10%;
+            background: #fff;
+            color: #000;
+        }
+        .testimonials-container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
         }
-        .section-dark img {
-            width: 50%;
-            border-radius: 5px;
-        }
-        .section-dark .text {
-            width: 45%;
-        }
         .testimonial {
-    position: relative;
-    width: 30%;
-    text-align: left;
-    overflow: hidden;
-}
-
-.testimonial img {
-    width: 100%;
-    border-radius: 10px;
-    display: block;
-}
-
-.testimonial-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-    color: #fff;
-    font-family: 'Lora', serif;
-    font-size: 16px;
-    font-style: regular;
-    border-radius: 0 0 10px 10px;
-}
-      .faq {
-    text-align: left;
-    max-width: 800px;
-    margin: auto;
-    padding: 60px 10%;
-    background: #fff;
-    color: #000;
-}
+            width: 30%;
+            text-align: left;
+            position: relative;
+        }
+        .testimonial img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        .testimonial-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+            color: #fff;
+            font-family: 'Lora', serif;
+            font-size: 16px;
+            font-style: italic;
+        }
+        .faq {
+            text-align: left;
+            max-width: 800px;
+            margin: auto;
+            padding: 60px 10%;
+            background: #fff;
+            color: #000;
+        }
         .faq-item {
             margin-bottom: 20px;
+        }
+        .faq-item p {
+            margin-top: 5px;
         }
         footer {
             text-align: center;
@@ -131,88 +145,33 @@
         .social-links a {
             color: #000;
             text-decoration: none;
-            margin: 0 10px;
-            font-size: 18px;
+            margin: 0 15px;
+            font-size: 24px;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#guides">Guides</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <header>
         <div class="header-content">
             <h1>Train & Learn</h1>
-            <p>A space to train, learn, and connect. Good workouts, real progress, and a group that keeps you going.</p>
+            <p>Get stronger, pick up Spanish, and meet like-minded people who love to move and learn—together.</p>
             <a href="#join" class="cta-button">Join the Community</a>
         </div>
+        <p class="explore-more">Explore more ↓</p>
     </header>
-
-    <section class="section-light">
-        <img src="https://images.pexels.com/photos/10039527/pexels-photo-10039527.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="About Train & Learn">
-        <div class="text">
-            <h2>About Our Method</h2>
-            <p>Train & Learn is designed for those who want to challenge their body and mind. Our innovative approach blends fitness and Spanish learning into one engaging experience.</p>
-            <a href="#join" class="cta-button">Book a Free Session</a>
-        </div>
-    </section>
-
-    <section class="section-light">
-        <div class="text">
-            <h2>How It Works</h2>
-            <p>Train & Learn combines movement and language in a way that feels natural and immersive. Each session is designed to challenge your body while reinforcing key Spanish phrases and vocabulary.</p>
-            <a href="#join" class="cta-button">Explore the Method</a>
-        </div>
-        <img src="https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="How It Works">
-    </section>
-
-    <section class="testimonials">
-        <h2>What Our Members Say</h2>
-        <p>Real stories from people who train and learn with us.</p>        
-        <div class="testimonials-container">
-            <div class="testimonial">
-    <img src="https://images.pexels.com/photos/14591548/pexels-photo-14591548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 1">
-    <div class="testimonial-content">
-        <blockquote>"I never imagined I could improve my Spanish while getting stronger. It's fun and effective!"</blockquote>
-    </div>
-</div>
-            <div class="testimonial">
-    <img src="https://images.pexels.com/photos/14591548/pexels-photo-14591548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 2">
-    <div class="testimonial-content">
-        <blockquote>"I never imagined I could improve my Spanish while getting stronger. It's fun and effective!"</blockquote>
-    </div>
-</div>
-            <div class="testimonial">
-    <img src="https://images.pexels.com/photos/14591548/pexels-photo-14591548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Testimonial 3">
-    <div class="testimonial-content">
-        <blockquote>"I never imagined I could improve my Spanish while getting stronger. It's fun and effective!"</blockquote>
-    </div>
-</div>
-    </section>
-
-    <section class="faq">
-        <h2>FAQ</h2>
-        <div class="faq-item">
-            <h3>Who is this for?</h3>
-            <p>Anyone looking to stay fit while learning Spanish, regardless of fitness level.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Do I need to know Spanish? Que?</h3>
-            <p>No, you can start at any level. We adapt to beginners and advanced learners alike.</p>
-        </div>
-         <div class="faq-item">
-            <h3>What do I need to bring to a session?</h3>
-            <p>You just need comfortable workout clothes, water, and a positive attitude! If you’re attending in person, we provide all necessary equipment.</p>
-        </div>
-        <div class="faq-item">
-            <h3>Can I try a session before committing?</h3>
-            <p>Absolutely! We offer a free trial session so you can experience Train & Learn firsthand..</p>
-        </div>
-    </section>
 
     <footer>
         <p>Follow us on:</p>
         <div class="social-links">
-            <a href="https://instagram.com">Instagram</a>
-            <a href="https://strava.com">Strava</a>
-            <a href="https://tiktok.com">TikTok</a>
+            <a href="https://instagram.com">📸</a>
+            <a href="https://strava.com">🏃</a>
+            <a href="https://tiktok.com">🎵</a>
         </div>
     </footer>
 </body>
