@@ -1,271 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fitness & Language Learning</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    /* General Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: Helvetica, sans-serif;
-      color: #333;
-      background-color: #fff;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness & Language Learning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles (Mobile First) */
+        body {
+            font-family: Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            text-align: center;
+        }
 
-    h1, h2, h3 {
-      font-family: 'Lora', serif;
-    }
+        h1 {
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
 
-    h1 {
-      font-size: 32px;
-    }
+        h2 {
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
 
-    h2 {
-      font-size: 24px;
-    }
+        h3 {
+            font-weight: 200;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
 
-    h3 {
-      font-size: 18px;
-    }
+        .cta, .hero-cta {
+            background-color: #FC3DA5;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 55px;
+            margin-top: 20px;
+        }
 
-    a {
-      text-decoration: none;
-    }
+        /* Navigation */
+        .nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
 
-    .cta, .hero-cta {
-      background-color: #FC3DA5;
-      color: #fff;
-      padding: 12px 24px;
-      text-align: center;
-      display: inline-block;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 50px;
-      margin-top: 15px;
-    }
+        .nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
 
-    /* Navigation */
-    .nav {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      display: flex;
-      gap: 15px;
-    }
+        /* Hero Section */
+        .hero {
+            background: url('https://images.pexels.com/photos/4720531/pexels-photo-4720531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 40px 20px;
+            color: white;
+            position: relative;
+            text-align: center;
+        }
 
-    .nav a {
-      color: white;
-      font-size: 14px;
-    }
+        .hero-content {
+            max-width: 700px;
+        }
 
-    /* Hero Section */
-    .hero {
-      background: url('https://images.pexels.com/photos/4720531/pexels-photo-4720531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
-      height: 100vh;
-      display: flex;
-      align-items: flex-end;
-      padding: 20px;
-      color: white;
-      position: relative;
-      text-align: center;
-    }
+        /* Section Styles */
+        .section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        }
 
-    .hero-content {
-      width: 100%;
-    }
+        .section img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
 
-    /* Sections */
-    .section {
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
+        .text-content {
+            width: 100%;
+        }
 
-    .section img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 10px;
-    }
+        /* Testimonials */
+        .testimonials-section {
+            padding: 40px 20px;
+        }
 
-    .text-content {
-      width: 100%;
-    }
+        .testimonials-header {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 400;
+            color: #000;
+        }
 
-    /* Testimonials */
-    .testimonials-header {
-      padding: 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+        }
 
-    .testimonials {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+        .testimonial {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 30px;
+            min-height: 300px;
+            border-radius: 15px;
+            color: white;
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
 
-    .testimonial {
-      position: relative;
-      padding: 30px;
-      min-height: 250px;
-      border-radius: 15px;
-      color: white;
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      text-align: center;
-    }
+        .testimonial:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+            border-radius: 15px;
+        }
 
-    .testimonial:before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-      border-radius: 15px;
-      pointer-events: none;
-    }
+        .testimonial p {
+            position: relative;
+            z-index: 1;
+            font-size: 16px;
+        }
 
-    .testimonial p {
-      position: relative;
-      z-index: 1;
-      font-size: 16px;
-      font-weight: 400;
-      padding: 10px;
-    }
+        .testimonial-1 { background: url('https://images.pexels.com/photos/1334945/pexels-photo-1334945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover; }
+        .testimonial-2 { background: url('https://images.pexels.com/photos/8172779/pexels-photo-8172779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover; }
+        .testimonial-3 { background: url('https://images.pexels.com/photos/6760985/pexels-photo-6760985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover; }
 
-    .testimonial-1 {
-      background: url('https://images.pexels.com/photos/1334945/pexels-photo-1334945.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
-    }
+        /* FAQ Section */
+        .faq {
+            padding: 40px 20px;
+            margin-bottom: 20px;
+        }
 
-    .testimonial-2 {
-      background: url('https://images.pexels.com/photos/8172779/pexels-photo-8172779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
-    }
+        .faq-item {
+            margin-bottom: 20px;
+        }
 
-    .testimonial-3 {
-      background: url('https://images.pexels.com/photos/6760985/pexels-photo-6760985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
-    }
+        /* Footer */
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-    /* FAQs */
-    .faq {
-      padding: 40px 20px;
-      text-align: center;
-      max-width: 900px;
-      margin: auto;
-    }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
 
-    .faq-item {
-      margin-bottom: 20px;
-    }
+        /* Media Queries for Larger Screens */
+        @media (min-width: 768px) {
+            h1 { font-size: 52px; }
+            h2 { font-size: 28px; }
 
-    /* Footer */
-    footer {
-      background: black;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+            .hero {
+                padding: 50px;
+            }
 
-    footer a {
-      color: white;
-      margin: 0 10px;
-      font-size: 14px;
-    }
+            .hero-content {
+                text-align: left;
+            }
 
-    /* Media Queries */
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 52px;
-      }
+            .nav {
+                right: 50px;
+            }
 
-      h2 {
-        font-size: 28px;
-      }
+            .section {
+                flex-direction: row;
+                align-items: center;
+                text-align: left;
+            }
 
-      .hero-content {
-        text-align: left;
-        max-width: 600px;
-      }
+            .section img, .text-content {
+                width: 50%;
+            }
 
-      .nav {
-        top: 20px;
-        right: 50px;
-      }
-
-      .section {
-        flex-direction: row;
-        text-align: left;
-        gap: 40px;
-      }
-
-      .section img,
-      .text-content {
-        width: 50%;
-      }
-
-      .testimonials {
-        flex-direction: row;
-        gap: 20px;
-      }
-    }
-  </style>
+            .testimonials {
+                flex-direction: row;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <div class="nav">
-    <a href="#Events">Events</a>
-    <a href="#Retreats">Retreats</a>
-    <a href="#Blog">Blog</a>
-    <a href="#Contact Us">Contact</a>
-  </div>
-  
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Cognitive Body Fitness</h1>
-      <h3>Stimulate your learning skills through collective body movement</h3>
-      <a href="#" class="hero-cta">Join our Community</a>
+    <div class="nav">
+        <a href="#Events">Events</a>
+        <a href="#Retreats">Retreats</a>
+        <a href="#Blog">Blog</a>
+        <a href="#Contact">Contact</a>
     </div>
-  </section>
 
-  <section class="testimonials-header">
-    <p>Beyond fitness and language, this community is built on support, motivation, and shared experiences. Every session brings coffee and people together—learning, sweating, and pushing each other forward, no matter where they are on their journey.</p>
-  </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Cognitive Body Fitness</h1>
+            <h3>Stimulate your learning skills through collective body movement</h3>
+            <a href="#" class="hero-cta">Join our Community</a>
+        </div>
+    </section>
 
-  <section class="section">
-    <div class="text-content">
-      <h2>What's this about</h2>
-      <p>We believe fitness is more than just movement—it’s an opportunity to challenge yourself, build confidence, and learn something new.</p>
-      <a href="#" class="cta">Book a Free Session</a>
-    </div>
-    <img src="https://images.pexels.com/photos/10039525/pexels-photo-10039525.jpeg" alt="Fitness Training">
-  </section>
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <p>Beyond fitness and language, this community is built on support, motivation, and shared experiences.</p>
+        </div>
+    </section>
 
-  <section class="testimonials">
-    <div class="testimonial testimonial-1"><p>"A very sweaty way to learn directions for my trip in South America!"</p></div>
-    <div class="testimonial testimonial-2"><p>"Not just a workout, but a fun way to learn that burpees are hard in any language."</p></div>
-    <div class="testimonial testimonial-3"><p>"What started as a joke ended up getting me in the best shape of my life. Vamos!"</p></div>
-  </section>
+    <section class="section">
+        <div class="text-content">
+            <h2>What's this about</h2>
+            <p>We blend fitness with immersive language learning.</p>
+            <a href="#" class="cta">Book a Free Session</a>
+        </div>
+        <img src="https://images.pexels.com/photos/10039525/pexels-photo-10039525.jpeg" alt="Fitness Training">
+    </section>
 
-  <footer>
-    <a href="#">Instagram</a>
-    <a href="#">Strava</a>
-    <a href="#">TikTok</a>
-  </footer>
+    <footer>
+        <a href="#">Instagram</a>
+        <a href="#">Strava</a>
+        <a href="#">TikTok</a>
+    </footer>
 
 </body>
 </html>
