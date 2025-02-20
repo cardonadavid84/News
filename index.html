@@ -60,17 +60,18 @@
     margin-top: 15px;
 }
         .hero {
-            background: url('https://images.pexels.com/photos/4720531/pexels-photo-4720531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: flex-end;
-            padding: 50px;
-            color: white;
-        }
+    background: url('https://images.pexels.com/photos/4720531/pexels-photo-4720531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end; /* Keeps everything aligned to bottom */
+    justify-content: flex-start; /* Aligns content to the left */
+    padding: 50px;
+    color: white;
+}
         .hero-content {
-          position: absolute;
+          position: relative;
         
-          left: 50px;
+          left: 0px;
             max-width: 700px;
         }
         .nav {
@@ -189,11 +190,10 @@
         <a href="#Contact Us">Contact</a>
     </div>
     
-    <section class="hero">
+   <section class="hero">
     <div class="hero-content">
         <h1>Cognitive Body Fitness</h1>
         <h3>Stimulate your learning skills through collective body movement</h3>
-        
         <a href="#" class="hero-cta">Join our Community</a>
     </div>
 </section>
